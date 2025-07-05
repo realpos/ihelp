@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아이구해줘 카드 생성기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>아이구해줘 카드 생성기</h1>
+    <form id="cardForm">
+        <label>아이 이름 <input type="text" id="child_name"></label><br>
+        <label>생년월일 <input type="text" id="birth_date" placeholder="YYYY-MM-DD"></label><br>
+        <label>혈액형 <input type="text" id="blood_type"></label><br>
+        <label>지병 <input type="text" id="diseases" placeholder="여러 항목은 쉼표로 구분"></label><br>
+        <label>알러지 <input type="text" id="allergies" placeholder="여러 항목은 쉼표로 구분"></label><br>
+        <label>특이사항 <input type="text" id="special_notes"></label><br>
+        <label>부모 연락처 <input type="text" id="parent_contact"></label><br>
+        <label>긴급 연락처 <input type="text" id="emergency_contact"></label><br>
+        <button type="button" id="generate">카드 생성</button>
+    </form>
+    <canvas id="cardCanvas" width="600" height="400" style="display:none;"></canvas>
+    <div id="downloadArea" style="display:none;">
+        <a id="downloadLink" href="#" download="card.png">이미지 다운로드</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
